@@ -32,31 +32,63 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #fff;
 }
 
 .about-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #eee;
 }
 
 .projects-section {
-    height: 100%;
-    padding-top: 150px;
+    width: 100%;
+    padding: 120px 0 20px 0;
     text-align: center;
     background: #fff;
+    overflow: auto;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #eee;
 }
 
 /* Other - added by me */
+#intro, #about {
+    font-size: 250%;
+}
+
+.projects {
+    margin: 20px 0 20px 0;
+}
+
+.thumbnail,
+.thumbnail .caption {
+    background-color: #dcdcdc;
+    border: 0px;
+}
+
+.thumbnail img:hover {
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+
+div.container > img {
+    padding: 20px 0;
+}
+
+.page {
+    padding: 60px 20px 30px 20px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
