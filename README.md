@@ -5,6 +5,7 @@ This is the code for my projects website [torypeterschild.io](http://torypetersc
 
 ## Built With ##
 * [Bootstrap](http://getbootstrap.com/)
+* [scrolling-nav template](https://github.com/BlackrockDigital/startbootstrap-scrolling-nav)
 * [Font Awesome](http://fontawesome.io/)
 
 
