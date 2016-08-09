@@ -53,6 +53,20 @@ of those sections to manage the look and feel of the site. */
     overflow: auto;
 }
 
+.dreamybot-section {
+    height: auto;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    background: #fbfbfb;
+}
+
+.loveinthetimeof-section {
+    height: auto;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    background: #fbfbfb;
+}
+
 .contact-section {
     height: auto;
     padding: 120px 0 100px 0;
@@ -90,5 +104,10 @@ div.container > img {
 
 h3 {
     margin-top: 0;
+}
+
+
+figcaption.caption > a {
+    margin: 15px 0 15px 0;
 }
 
