@@ -1,0 +1,6 @@
+.DS_Store
+app/*.pyc
+*.pyc
+config.py
+app/static/overheard.txt
+*.log
