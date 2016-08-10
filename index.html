@@ -16,10 +16,27 @@
     <title>tory peterschild</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+
+    <script>window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+     
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+      };
+     
+      return t;
+    }(document, "script", "twitter-wjs"));</script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -44,7 +61,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">tory peterschild</i></a>
+                <a class="navbar-brand page-scroll" href="#page-top">tory peterschild</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -61,7 +78,7 @@
                         <a class="page-scroll" href="#projects"><i class="fa fa-code"></i>&nbsp;projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact"><i class="fa fa-envelope-o"></i>&nbsp;contact</a>
+                        <a class="page-scroll" href="#contact"><i class="fa fa-commenting-o"></i>&nbsp;contact</a>
                     </li>
                 </ul>
             </div>
@@ -76,6 +93,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>hello</h1>
+                    <img id="pic" class="img-circle" width="220px" alt="" src="img/pic.jpg">
                     <p>me talking about myself</p>
                     <a class="btn btn-default page-scroll" href="#about">Scroll Down!</a>
                 </div>
@@ -89,31 +107,147 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1><i class="fa fa-smile-o"></i></h1>
+                    <p>An aspiring software engineer living in Brooklyn, NY.</p>
+                    <p>Below you can find descriptions and links to a few fun projects.</p>
+                    <a class="btn btn-default page-scroll" href="#projects">onward, to projects!</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="projects" class="projects-section">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h1><i class="fa fa-code"></i></h1>
                 </div>
             </div>
+              <div class="row projects">
+                <div class="col-md-4">
+                  <figure class="thumbnail">
+                    <a href="https://twitter.com/dreamy_bot_">
+                      <img src="img/dreambot.png" class="img-responsive" />
+                    </a>
+                    <figcaption class="caption">
+                      <a href="https://twitter.com/dreamy_bot_"><h3>Dream Bot</h3></a>
+                      <p>A bot that tweets real tweets of real dreams, without the {{ I dreamt that }} part.</p>  
+                      <p><a href="#dreamybot" class="a-expand" data-toggle="collapse">more info</a></p>
+                        <p><a href="https://github.com/torypeterschild/dream-bot"><i class="fa fa-external-link"></i> source</a></p>
+                    </figcaption>
+                  </figure>
+                </div> <!-- End col-md-4 -->
+                <div class="col-md-4">
+                  <figure class="thumbnail">
+                    <a href="https://twitter.com/LoffInTheTimeOf">
+                      <img src="img/loveinthetimeof.png" class="img-responsive" />
+                    </a>
+                    <figcaption class="caption">
+                      <a href="https://twitter.com/LoffInTheTimeOf"><h3>Love in the Time Of Bot</h3></a>
+                      <p>A twitter bot that appends happenings in the news to "Love in the Time Of"</p>
+                        <p><a href="#loveinthetimeof" class="a-expand" data-toggle="collapse">more info</a></p>
+                      <p><a href="https://github.com/torypeterschild/love-in-the-time-of"><i class="fa fa-external-link"></i> source</a></p>
+                    </figcaption>
+                  </figure>
+                </div> <!-- End col-md-4 -->
+                <div class="col-md-4">
+                  <figure class="thumbnail">
+                    <a href="http://cartoons.torypeterschild.io/">
+                      <img src="img/cartoonist.png" class="img-responsive" />
+                    </a>
+                    <figcaption class="caption">
+                      <a href="http://cartoons.torypeterschild.io/"><h3>Cartoon Generator</h3></a>
+                      <p>A little app that generates cartoons.</p>
+                      <p><a href="https://github.com/torypeterschild/the-cartoonist"><i class="fa fa-external-link"></i> source</a></p>
+                    </figcaption>
+                  </figure>
+                </div> <!-- End col-md-4 -->
+        </div> <!-- End container -->
+    </section>
+
+    <!-- Dreamy Bot Section -->
+    <section id="dreamybot" class="collapse dreamybot-section">
+        <div id="dreamybotdiv" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><a href="https://twitter.com/dreamy_bot_" data-show-count="false">@dreamy_bot_</a></h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p><span class="highlight">Dream Bot</span> searches for tweets that contain "I dreamt that." It then filters for mention of waking up, mention of it being a dream, anything extremely offensive, and tweets whatever comes after "I dream that."</p>
+                    <p><a href="https://twitter.com/dreamy_bot_" class="twitter-follow-button" data-show-count="false">Follow @dreamy_bot_</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I fought all the girls at a party. Then we became friends after</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/761653013928968193">August 5, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I became the president of America and Donald trump dmd me to congratulate me</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/756783422660612096">July 23, 2016</a></blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">he liked me back lol</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/761260425434505216">August 4, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I was at a freak show</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/763102566058192896">August 9, 2016</a></blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">I always knew what to say</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/761924806073839616">August 6, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">my cat got a skin infection that caused her fur to change color every ten minutes.</p>&mdash; Dream Bot (@dreamy_bot_) <a href="https://twitter.com/dreamy_bot_/status/763042171679346692">August 9, 2016</a></blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><a href="#dreamybot" class="a-collapse" data-toggle="collapse"></a></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Love in the Time Of Bot Section -->
+    <section id="loveinthetimeof" class="collapse loveinthetimeof-section">
+        <div id="loveinthetimeofdiv" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><a href="https://twitter.com/LoffInTheTimeOf" data-show-count="false">@LoffInTheTimeOf</a></h1>
+                </div>
+            </div>
+            <div class="row">
+                <p><span class="highlight">Love In The Time Of</span> scrapes headlines from the <a href="https://news.google.com/" target="_blank">Google News RSS feed</a> and then uses <span class="highlight">TextBlob</span> to extract noun phrases (somewhat imperfectly). It filters for very offensive content and very common names, and selects randomly from the phrases that remain.</p>
+                <p><a href="https://twitter.com/LoffInTheTimeOf" class="twitter-follow-button" data-show-count="false">Follow @LoffInTheTimeOf</a></p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Olympic Magic</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/762589219168653312">August 8, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Brutal Week</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/761230270431395840">August 4, 2016</a></blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Ransom Payment</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/761139668834549761">August 4, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Winning Powerball Numbers</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/759599542413262848">July 31, 2016</a></blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Planned Parenthood</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/757968803556974592">July 26, 2016</a></blockquote>
+                    <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Love in the Time of Marijuana Chemical</p>&mdash; Love In The Time Of (@LoffInTheTimeOf) <a href="https://twitter.com/LoffInTheTimeOf/status/756311199470485505">July 22, 2016</a></blockquote>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1><a href="#loveinthetimeof" class="a-collapse" data-toggle="collapse"></a></h1>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact" class="contact-section page">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1><i class="fa fa-envelope-o"></i></h1>
-<!--                         <p>
-                            <a href="https://github.com/torypeterschild"><i class="fa fa-github fa-lg"></i></a>
-                        </p> -->
+                    <h1><i class="fa fa-commenting-o"></i></h1>
+                </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>
+                    <a href="https://github.com/torypeterschild"><i class="fa fa-github-square fa-lg"></i>&nbsp;&nbsp;github</a></p>
+                    <p><a href="https://www.linkedin.com/in/torypeterschild"><i class="fa fa-linkedin-square fa-lg"></i>&nbsp;&nbsp;linkedin</a></p>
+                    <p><a href="mailto:torypeterschild@gmail.com"><i class="fa fa-envelope fa-lg"></i>&nbsp;&nbsp;torypeterschild[@]gmail[dot]com</a></p>
                 </div>
             </div>
         </div>
@@ -128,6 +262,9 @@
     <!-- Scrolling Nav JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/scrolling-nav.js"></script>
+
+    <!-- twitter JavaScript -->
+    <script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
 
 </body>
 

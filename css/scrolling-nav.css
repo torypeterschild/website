@@ -32,29 +32,181 @@ The padding is very important to make sure the scrollspy picks up the right area
 of those sections to manage the look and feel of the site. */
 
 .intro-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #fff;
 }
 
 .about-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #eee;
 }
 
 .projects-section {
-    height: 100%;
-    padding-top: 150px;
+    width: 100%;
+    padding: 120px 0 20px 0;
     text-align: center;
     background: #fff;
+    overflow: auto;
+}
+
+.dreamybot-section {
+    height: auto;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    font-size: 120%;
+    background: #fbfbfb;
+}
+
+.loveinthetimeof-section {
+    height: auto;
+    padding: 100px 0 100px 0;
+    text-align: center;
+    font-size: 120%;
+    background: #fbfbfb;
 }
 
 .contact-section {
-    height: 100%;
-    padding-top: 150px;
+    height: auto;
+    padding: 120px 0 100px 0;
     text-align: center;
     background: #eee;
 }
+
+/*.contact-section p {
+    text-align: left!important;
+}*/
+
+/* Other - added by me */
+#intro, #about {
+    font-size: 150%;
+}
+
+.projects {
+    margin: 20px 0 20px 0;
+}
+
+.thumbnail,
+.thumbnail .caption {
+    background-color: #dcdcdc;
+    border: 0px;
+}
+
+.thumbnail img:hover {
+    opacity:0.8;
+    filter:alpha(opacity=80);
+}
+
+div.container > img {
+    padding: 20px 0;
+}
+
+.page {
+    padding: 60px 20px 30px 20px;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    margin-right: 5px;
+}
+
+
+a.a-expand:link:before {
+    content: "\f196";
+    font-family: FontAwesome;
+    margin-right: 5px;
+    text-decoration: none!important;
+}
+
+a.a-expand:active {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a.a-expand:hover,
+a.a-expand:visited {
+    text-decoration: none!important;
+}
+
+a.a-expand:before {
+    content: normal;
+    text-decoration: none!important;
+}
+
+a.a-expand:focus,
+a.a-expand:focus:hover {
+    content: "\f196";
+    text-decoration: none!important;
+}
+
+a.a-collapse:before {
+    content: "\f147";
+    font-family: FontAwesome;
+    text-decoration: none!important;
+}
+
+a.a-collapse:active,
+a.a-collapse:hover,
+a.a-collagpse:visited {
+    margin-right: 5px;
+    text-decoration: none!important;
+}
+
+a.a-collapse:focus {
+    text-decoration: none!important;
+}
+
+blockquote {
+    border-left: none;
+    margin:0;
+    padding:0;
+}
+
+blockquote.twitter-tweet {
+  display: block;
+  padding: 16px;
+  margin: 10px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: normal 14px/18px "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+  color: #000;
+}
+ 
+blockquote.twitter-tweet p {
+  font: normal;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+}
+ 
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.highlight {
+    color: #9d9d9d;
+}
+
