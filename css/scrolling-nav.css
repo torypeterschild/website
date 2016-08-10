@@ -126,18 +126,26 @@ a:active {
     margin-right: 5px;
 }
 
-a.a-expand:link:before {
-    content: "\f196";
+a.expanded::before {
+    content: "\f102"!important;
     font-family: FontAwesome;
     margin-right: 5px;
-    text-decoration: none!important;
 }
 
-a.expanded:link:before {
-    content: "\f147"!important;
+a.expanded::after {
+    content: "less info"!important;
+    margin-right: 5px;
+}
+
+a.expander::before {
+    content: "\f103"!important;
     font-family: FontAwesome;
     margin-right: 5px;
-    text-decoration: none!important;
+}
+
+a.expander::after {
+    content: "more info"!important;
+    margin-right: 5px;
 }
 
 blockquote {
