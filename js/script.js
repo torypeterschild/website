@@ -1,10 +1,4 @@
 
-$( "a.expander" ).click(function() {
-    var domElement = $("#collapseOne")[0] // [0] returns the first DOM element that jQuery found
-    $(domElement.attributes).each(function(index, attribute) {
-        console.log("Attribute:"+attribute.nodeName+" | Value:"+attribute.nodeValue);
-    });
-});
 
 $( "#dreamexpand" ).click(function() {
     $( this ).toggleClass('expander');
@@ -14,7 +8,13 @@ $( "#dreamexpand" ).click(function() {
     } else {
         $( this ).addClass('expanded');
     }
+    if ($( "#collapseTwo" ).hasClass('in')) {
+        $( "#loveexpand" ).toggleClass('expander');
+        $( "#loveexpand" ).toggleClass('collapsed');
+        $( "#loveexpand" ).toggleClass('expanded');
+    }
 });
+
 
 $( "#loveexpand" ).click(function() {
     $( this ).toggleClass('expander');
@@ -24,16 +24,27 @@ $( "#loveexpand" ).click(function() {
     } else {
         $( this ).addClass('expanded');
     }
+    if ($( "#collapseOne" ).hasClass('in')) {
+        $( "#dreamexpand" ).toggleClass('expander');
+        $( "#dreamexpand" ).toggleClass('collapsed');
+        $( "#dreamexpand" ).toggleClass('expanded');
+    }
 });
 
-var domElement = $("#collapseOne")[0] // [0] returns the first DOM element that jQuery found
-$(domElement.attributes).each(function(index, attribute) {
-  console.log("Attribute:"+attribute.nodeName+" | Value:"+attribute.nodeValue);
+
+$( "#altlove" ).click(function() {
+    $( "#loveexpand" ).addClass('expander').removeClass('expanded');
+    $( "#loveexpand" ).addClass('collapsed');
 });
 
-$( "#dreamexpand" ).click(function() {
-    var domElement = $("#dreamexpand")[0] // [0] returns the first DOM element that jQuery found
-    $(domElement.attributes).each(function(index, attribute) {
-      console.log("Attribute:"+attribute.nodeName+" | Value:"+attribute.nodeValue);
-    });
+$( "#altdream" ).click(function() {
+    $( "#dreamexpand" ).addClass('expander').removeClass('expanded');
+    $( "#dreamexpand" ).addClass('collapsed');
 });
+
+
+
+
+
+
+
