@@ -124,7 +124,6 @@ a:active {
     margin-right: 5px;
 }
 
-
 a.a-expand:link:before {
     content: "\f196";
     font-family: FontAwesome;
@@ -205,5 +204,11 @@ h1 {
 
 .highlight {
     color: #9d9d9d;
+}
+
+.panel-title a {
+    display: block;
+    padding: 10px 15px;
+    margin: -10px -15px;
 }
 
