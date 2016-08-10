@@ -34,9 +34,9 @@ $("#altlove").click(function() {
     $("#loveexpand").addClass('expander').removeClass('expanded');
     $("#loveexpand").addClass('collapsed');
 
-    var panel = $("#projects");
+    var panel = $("#lovethumb");
     $('html, body').animate({
-        scrollTop: panel.offset().top
+        scrollTop: panel.offset().top - 100
     }, 500);
 });
 
@@ -44,9 +44,9 @@ $("#altdream").click(function() {
     $("#dreamexpand").addClass('expander').removeClass('expanded');
     $("#dreamexpand").addClass('collapsed');
 
-    var panel = $("#projects");
+    var panel = $("#dreamthumb");
     $('html, body').animate({
-        scrollTop: panel.offset().top
+        scrollTop: panel.offset().top - 100
     }, 500);
 });
 
