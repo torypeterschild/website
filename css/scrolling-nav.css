@@ -64,6 +64,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding: 100px 0 100px 0;
     text-align: center;
+    font-size: 150%;
     background: #fbfbfb;
 }
 
@@ -107,21 +108,48 @@ h3 {
 }
 
 
-figcaption.caption > a {
-    margin: 15px 0 15px 0;
-}
-
-a.a-expand:before {
+a.a-expand:link:before {
     content: "\f196";
     font-family: FontAwesome;
     margin-right: 5px;
     text-decoration: none!important;
 }
 
+a.a-expand:active {
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+a.a-expand:hover,
+a.a-expand:visited {
+    text-decoration: none!important;
+}
+
+a.a-expand:before {
+    content: normal;
+    text-decoration: none!important;
+}
+
+a.a-expand:focus,
+a.a-expand:focus:hover {
+    content: "\f196";
+    text-decoration: none!important;
+}
+
 a.a-collapse:before {
     content: "\f147";
     font-family: FontAwesome;
+    text-decoration: none!important;
+}
+
+a.a-collapse:active,
+a.a-collapse:hover,
+a.a-collagpse:visited {
     margin-right: 5px;
+    text-decoration: none!important;
+}
+
+a.a-collapse:focus {
     text-decoration: none!important;
 }
 
