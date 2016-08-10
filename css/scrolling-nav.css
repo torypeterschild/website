@@ -57,6 +57,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding: 100px 0 100px 0;
     text-align: center;
+    font-size: 120%;
     background: #fbfbfb;
 }
 
@@ -64,7 +65,7 @@ of those sections to manage the look and feel of the site. */
     height: auto;
     padding: 100px 0 100px 0;
     text-align: center;
-    font-size: 150%;
+    font-size: 120%;
     background: #fbfbfb;
 }
 
@@ -74,6 +75,10 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #eee;
 }
+
+/*.contact-section p {
+    text-align: left!important;
+}*/
 
 /* Other - added by me */
 #intro, #about {
@@ -105,6 +110,18 @@ div.container > img {
 
 h3 {
     margin-top: 0;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+    text-decoration: none;
+}
+
+a:active {
+    margin-right: 5px;
 }
 
 
@@ -183,5 +200,13 @@ blockquote.twitter-tweet a[href^="https://twitter.com"] {
   font-weight: normal;
   color: #666;
   font-size: 12px;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+.highlight {
+    color: #9d9d9d;
 }
 
