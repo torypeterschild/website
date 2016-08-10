@@ -17,15 +17,15 @@ html {
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
     }
-
     .top-nav-collapse {
         padding: 0;
     }
 }
+
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
@@ -78,12 +78,16 @@ of those sections to manage the look and feel of the site. */
     background: #eee;
 }
 
+
 /*.contact-section p {
     text-align: left!important;
 }*/
 
+
 /* Other - added by me */
-#intro, #about {
+
+#intro,
+#about {
     font-size: 150%;
 }
 
@@ -98,8 +102,8 @@ of those sections to manage the look and feel of the site. */
 }
 
 .thumbnail img:hover {
-    opacity:0.8;
-    filter:alpha(opacity=80);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 
 div.container > img {
@@ -150,34 +154,34 @@ a.expander::after {
 
 blockquote {
     border-left: none;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 blockquote.twitter-tweet {
-  display: block;
-  padding: 16px;
-  margin: 10px 0;
-  max-width: 468px;
-  border: #ddd 1px solid;
-  border-top-color: #eee;
-  border-bottom-color: #bbb;
-  border-radius: 5px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-  font: normal 14px/18px "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
-  color: #000;
+    display: block;
+    padding: 16px;
+    margin: 10px 0;
+    max-width: 468px;
+    border: #ddd 1px solid;
+    border-top-color: #eee;
+    border-bottom-color: #bbb;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    font: normal 14px/18px "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    color: #000;
 }
- 
+
 blockquote.twitter-tweet p {
-  font: normal;
-  line-height: 20px;
-  margin: 0 5px 10px 0;
+    font: normal;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
 }
- 
+
 blockquote.twitter-tweet a[href^="https://twitter.com"] {
-  font-weight: normal;
-  color: #666;
-  font-size: 12px;
+    font-weight: normal;
+    color: #666;
+    font-size: 12px;
 }
 
 h1 {
@@ -192,7 +196,13 @@ h1 {
     display: none;
 }
 
-.panel, .panel-default, .panel-group, .panel-body, .panel-collapse, .collapse, .in {
+.panel,
+.panel-default,
+.panel-group,
+.panel-body,
+.panel-collapse,
+.collapse,
+.in {
     border: none!important;
 }
 
@@ -200,7 +210,8 @@ h1 {
     background: #fbfbfb;
 }
 
-.panel-collapse, .collapse {
+.panel-collapse,
+.collapse {
     border: none;
 }
 
